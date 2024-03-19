@@ -11,7 +11,7 @@
             display: flex;
             align-items: center; /* 세로 중앙 정렬 */
             justify-content: space-between;
-            
+            border-bottom: 1px solid #e1e1e1;
 
         }
         h1{
@@ -59,10 +59,62 @@
             height: 35px;
             
         }
+        .profile img{
+            width: 160px;
+            height: 160px;
+        }
+        /* 프로필의 설정이미지 */
+        .write-top img{
+            width: 40px;
+            height: 40px;
+            
+        }
+        .write-top{
+            display: flex;
+            align-items: center;
+            gap: 20px; /* flex 아이템 간 간격 설정*/
+        }
+        .profile-name{
+            display: inline;
+            font-weight: bold;
+            font-size:x-large;
+        }
+        button{
+            width: 95px;
+            height: 35px;
+            border: none;
+            border-radius: 7px;
+        }
+        button:hover{
+            background-color: gray;
+        }
+        .top-profile{
+            display: flex;
+            align-items: center;
+            height: 300px;
+
+        }
+        .profile{
+            width: 40%;
+        }
+        .profile img{ 
+            margin-left: 40%;
+        }
+        .profile-write{
+            width: 60%;
+        }
+        .write-middle{
+            display: flex;
+            gap: 20px;
+        }
+        .write-middle p{
+            font-size: larger;
+        }
+        .write-middle span{
+            font-weight: bold;
+        }
     </style>
 </head>
-<body>
-    <!-- <section class="header"> -->
         <header class="header">
             <img class="insta-logo" src="./insta-logo-pic.png" alt="인스타 아이콘"/>
             <h1>sumistagram</h1>
@@ -77,6 +129,30 @@
                 <li><img src="./cat.png" alt="프로필 아이콘" class="profile-icon"/></li>
             </ul>
         </header>
-    <!-- </section> -->
+        <!-- 프로필 영역 -->
+        <div class="top-profile">
+            <div class="profile"><img src="./cat.png" alt="프로필 아이콘" class="profile-icon"/></div>
+            <div class="profile-write">
+                <div class="write-top">
+                    <p class="profile-name">sumi.0w0</p>
+                    <button type="button">프로필 편집</button>
+                    <!-- <input type="button" value="프로필 편집"/> -->
+                    <img src="./set-icon.png" alt="설정 아이콘"/>
+                </div>
+                <div class="write-middle">
+                    <p>게시물 <span>3</span></p>
+                    <p>팔로워 <span>630</span></p>
+                    <p>팔로우 <span>240</span></p>
+                </div>
+                <div class="write-bottom">
+                    <p>저에 대해 알고싶으시면 각 게시물을 클릭해주세요~!</p>
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- 프로필 영역 끝-->
+
+        
 </body>
 </html>
