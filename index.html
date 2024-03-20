@@ -113,6 +113,57 @@
         .write-middle span{
             font-weight: bold;
         }
+        .post-header{
+            display: flex;
+            margin: 0px 12%;
+            border-top: 1px solid #e1e1e1;
+            justify-content: center;
+        }
+        .posting-container{
+            display: flex;
+            margin: 0px 12%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .post img{
+            width: 280px;
+            height: 280px;
+
+        }
+
+        .post-header-content {
+            margin: 20px 25px;
+        }
+        .post-header-content img{
+            width: 15px;
+            height: 15px;
+            margin-right: 3px;
+        }
+        .post-header-content span{
+            font-size: small;
+
+        }
+        .post-header-post{
+            font-weight: bold;
+        }
+        .post{
+            position: relative;
+        }
+        .post img:hover{
+            background-color: yellowgreen;
+        }
+        .post-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /*요소의 가로 및 세로 크기의 절반만큼 이동*/
+            z-index: 1;
+            color: white;
+            font-size: 40px;
+
+            font-weight: bold;
+
+        }
     </style>
 </head>
         <header class="header">
@@ -150,9 +201,20 @@
                 </div>
             </div>
         </div>
-        
         <!-- 프로필 영역 끝-->
 
+        <!--게시물 영역-->
+        <div class="post-header">
+            <div class="post-header-content"><img src="./plus-icon.png" alt="게시물 아이콘"><span class="post-header-post">게시물</span></div>
+            <div class="post-header-content"><img src="./save-icon.png" alt="저장 아이콘"><span>저장됨</span></div>
+            <div class="post-header-content"><img src="./tag-icon.png" alt="태그 아이콘"><span>태그됨</span></div>
+        </div>
+        <div class="posting-container">
+            <div class="post"><a href="test.html"><img src="./me.jpeg" alt="프로필 아이콘"><span class="post-text">자기소개</span></a></div>
+            <div class="post"><img src="./cat.png" alt="프로필 아이콘"><span class="post-text">취미</span></div>
+            <div class="post"><img src="./cat.png" alt="프로필 아이콘"><span class="post-text">임시</span></div>
+        </div>
+        <!--게시물 영역 끝-->
         
 </body>
 </html>
