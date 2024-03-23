@@ -1,0 +1,165 @@
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e1e1;
+
+}
+h1{
+    font-family: "Lobstar", cursive;
+    font-size: 28px;
+    display: inline;
+    /* justify-content: left; */
+    margin-right: auto;
+    
+}
+.search-input{
+    width: 260px;
+    padding: 8px 16px 8px 40px;
+    background-color: #efefef;
+    /* background-image: url('./search-icon.png') 10px; */
+    background-image: url('./img/search-icon.png');
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+    background-size: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.search-bar{
+    margin-left: 25%; 
+    flex: 1;
+}
+ul{
+    list-style: none; /*list의 점 제거*/
+}
+.nav-icon{
+    display: flex;
+}
+.nav-icon li img {
+    width: 25px;
+    height: 25px;
+    margin: 5px 23px 0 0;
+}
+.profile-icon {
+    border-radius: 70%;
+}
+.insta-logo{
+    width: 35px;
+    height: 35px;
+    
+}
+.profile img{
+    width: 160px;
+    height: 160px;
+}
+/* 프로필의 설정이미지 */
+.write-top img{
+    width: 40px;
+    height: 40px;
+    
+}
+.write-top{
+    display: flex;
+    align-items: center;
+    gap: 20px; /* flex 아이템 간 간격 설정*/
+}
+.profile-name{
+    display: inline;
+    font-weight: bold;
+    font-size:x-large;
+}
+button{
+    width: 95px;
+    height: 35px;
+    border: none;
+    border-radius: 7px;
+}
+button:hover{
+    background-color: gray;
+}
+.top-profile{
+    display: flex;
+    align-items: center;
+    height: 300px;
+
+}
+.profile{
+    width: 40%;
+}
+.profile img{ 
+    margin-left: 40%;
+}
+.profile-write{
+    width: 60%;
+}
+.write-middle{
+    display: flex;
+    gap: 20px;
+}
+.write-middle p{
+    font-size: larger;
+}
+.write-middle span{
+    font-weight: bold;
+}
+.post-header{
+    display: flex;
+    margin: 0px 12%;
+    border-top: 1px solid #e1e1e1;
+    justify-content: center;
+}
+.posting-container{
+    display: flex;
+    margin: 0px 12%;
+    align-items: center;
+    justify-content: space-between;
+}
+.post img{
+    width: 290px;
+    height: 290px;
+
+}
+
+.post-header-content {
+    margin: 20px 25px;
+}
+.post-header-content img{
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+.post-header-content span{
+    font-size: small;
+
+}
+.post-header-post{
+    font-weight: bold;
+}
+.post{
+    position: relative;
+}
+
+.post-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*요소의 가로 및 세로 크기의 절반만큼 이동*/
+    z-index: 1;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0; /* 처음에 글자 안보이게 불투명도 조절 */
+    transition: opacity 0.3s; /* 부드러운 전환 효과 추가 */
+    text-align: center;
+}
+.post:hover .post-text {
+    opacity: 1; /* 호버될 때 보이도록 설정 */
+}
+.post:hover img {
+    opacity: 0.7; /* 호버될 때 이미지의 불투명도 조절 */
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35); 
+}
