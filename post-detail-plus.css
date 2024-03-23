@@ -1,0 +1,69 @@
+  .top{
+    display: flex;
+    align-items: center;
+    height: 10%;
+    border-bottom: 1px solid rgb(201, 201, 201);
+  }
+  .top span{
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  .profile-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  .three-dot-icon{
+    width: 20px;
+    height: 20px;
+    margin-left: auto; /* 오른쪽 끝으로 이동 */
+    margin-right: 20px; /* 오른쪽으로 10px 띄우기 */
+  }
+  .middle{
+    display: flex;
+    height: 60%;
+    border-bottom: 1px solid rgb(201, 201, 201);
+  }
+  .bottom{
+    height: 30%;
+  }
+  .bottom-icon-section{
+    display: flex;
+    height: 20%;
+  }
+  .bottom-icon-section img{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .left-area{
+    margin-left: 20px;
+  }
+  .right-area{
+    margin-left: auto; /* 오른쪽 끝으로 이동 */
+    margin-right: 20px; /* 오른쪽으로 10px 띄우기 */
+  }
+  .bottom-text-section{
+    height: 40%;
+    border-bottom: 1px solid rgb(201, 201, 201);
+  }
+  .bottom-text-section p{
+    margin-left: 20px;
+  }
+  .bottom-text-section span{
+    font-weight: bold;
+  }
+  .bottom-comment-section input{ 
+    border: none;
+    margin: 10px 0px 0px 20px;
+    width: 80%;
+    height: 30px;
+  }
+  .bottom-comment-section button{
+    border: none;
+    background-color: white;
+    color: #0095f0;
+    font-size: 15px;
+    font-weight: 500;
+  }
