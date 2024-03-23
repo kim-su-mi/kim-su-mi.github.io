@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.9); /* 검정색 배경에 불투명도 부여 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
