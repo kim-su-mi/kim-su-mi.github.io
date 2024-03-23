@@ -6,6 +6,7 @@
     <title>취미 상세</title>
     <link rel="stylesheet" href="./post-detail.css">
     <link rel="stylesheet" href="./post-detail-plus.css">
+    <script src="./detail-page.js" defer></script>
 </head>
 <body>
     <div class="close-btn-section">
@@ -17,7 +18,9 @@
     </div>
     <div class="detail-page">
         <div class="photo-section">
-
+            <img class="post1" src="./img/trip.jpeg" alt="여행 사진"> 
+            <img class="post2" src="./img/baking.jpeg" alt="베이킹 사진">
+            <img class="post3" src="./img/jog.jpeg" alt="풍경 사진">
         </div>
         <div class="text-section">
             <div class="top">
@@ -25,16 +28,39 @@
                 <span>sumi.0w0</span>
                 <img src="./img/three-dot.png" alt="더보기 아이콘" class="three-dot-icon">
             </div>
-            <div class="middle"></div>
+            <div class="middle">
+                    <p class="post1">
+                        <span class="semi-title"># 여행</span><br>
+                        코로나때 억압받았더니 여행무새가 되었어요<br>
+                        국내,해외 가리지 않고 여행이라면 다 좋아합니다<br>
+                        최근에는 부산에 다녀왔어요!<br>
+                        중문과인데 중국을 한번도 안가봐서 다음에는 꼭 중국을 가보고 싶어요
+                    </p>
+                    <p class="post2">
+                        <span class="semi-title"># 베이킹</span><br>
+                        빵순이인데 요즘 빵 물가가 너무 비싸서 집에서 만들기 시작했습니다<br>
+                        바스크 치즈케이크, 마들렌을 제일 많이 만들어 먹는 것 같아요! <br>
+                        기회가 된다면 만들어 가겠습니다! 
+                    </p>
+                    <p class="post3">
+                        <span class="semi-title"># 산책 및 러닝</span><br>
+                        여러분 저희 동네가 숨겨진 벚꽃 맛집입니다!!!<br>
+                        집 주변에 천이 있어서 자주 산책하러 나갑니다. 가끔 너구리도 있어요<br>
+                        그리고 요즘엔 살기위해 러닝도 한답니다.
+
+                    </p>
+            </div>
             <div class="bottom">
                 <div class="bottom-icon-section">
-                    <img src="./img/heart-icon.png" alt="하트 아이콘" class="left-area">
+                    <img src="./img/heart-icon.png" alt="하트 아이콘" class="left-area" id="unlike">
+                    <img src="./img/full-heart-icon.png" alt="하트 아이콘" class="left-area" id="like">
                     <img src="./img/comment-icon.png" alt="댓글 아이콘" class="left-area">
                     <img src="./img/dm-icon.png" alt="디엠 아이콘" class="left-area">
                     <img src="./img/save-icon.png" alt="저장 아이콘" class="right-area">
                 </div>
                 <div class="bottom-text-section">
-                    <p><span>likelion_kmu</span>님 <span>외 100명</span>이 좋아합니다</p>
+                    <p class="like-unclick"><span>좋아요</span>를 눌러주세요</p>
+                    <p class="like-click"><span>아기사자</span>님이 이 게시물을 좋아합니다</p>
                     <p>3월 24일</p>
                 </div>
                 <div class="bottom-comment-section">
@@ -44,5 +70,6 @@
             </div>
         </div>
     </div>
+  
 </body>
 </html>
