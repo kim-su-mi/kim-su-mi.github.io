@@ -39,3 +39,22 @@ document.addEventListener("DOMContentLoaded", function() {
     // 초기에 첫 번째 슬라이드 보여주기
     showSlide(currentSlide);
 });
+
+// 사진 클릭시 정답이면 초록막 생기고 오답이면 빨간막 생김
+document.addEventListener("DOMContentLoaded", function() {
+    // .incorrect 요소를 클릭할 때마다 이벤트 처리
+    document.querySelectorAll('.incorrect').forEach(incorrectElement => {
+        incorrectElement.addEventListener('click', function() {
+            // 클릭한 .incorrect 요소에 clicked 클래스 추가
+            incorrectElement.classList.add('clicked');
+        });
+    });
+
+    // .correct 요소를 클릭할 때마다 이벤트 처리
+    document.querySelectorAll('.correct').forEach(correctElement => {
+        correctElement.addEventListener('click', function() {
+            // 클릭한 .correct 요소에 clicked 클래스 추가
+            correctElement.classList.add('clicked');
+        });
+    });
+});
