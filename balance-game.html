@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>밸런스 게임</title>
     <link rel="stylesheet" href="./post-detail.css">
+    <link rel="stylesheet" href="./balance-game.css">
+    <script src="./balance-game.js" defer></script>
 </head>
 <body>
     <div class="close-btn-section">
@@ -15,13 +17,35 @@
         <button class="before-slide">&lt;</button> <!-- '<'이 기호 특수문자라서 &lt;로 표시 -->
     </div>
     <div class="detail-page">
-        <div class="photo-section">
-
+        <div class="post1">
+            <span class="explain-text">
+                제 취향을 맞혀보세요~! <br>
+                두 사진 중 제 취향이라고 생각하는 곳에 마우스를 올려보세요.<br> 
+                맞으면 파란색 배경이 틀리면 빨간색 배경이 나옵니다!<br>
+                슬라이드를 다음으로 넘겨 게임을 시작해주세요!!!
+            </span>
+                
         </div>
-        <div class="text-section">
-            
-
+        <div class="post2">
+            <div class="correct"><img src="./img/hate-mint.jpeg" alt="치약 이미지"></div>
+            <div class="incorrect"><img src="./img/mint.jpeg" alt="민트초코 이미지"></div>
+            <span class="text">반민초파  VS  민초파 </span>
         </div>
+        <div class="post3">
+            <div class="correct"><img src="./img/peach2.jpeg" alt="복숭아 이미지"></div>
+            <div class="incorrect"><img src="./img/peach1.jpeg" alt="복숭아 이미지"></div>
+            <span class="text">물복  VS  딱복 </span>
+        </div>
+        <div class="post4">
+            <div class="incorrect"><img src="./img/Hawaiian Pizza.jpeg" alt="피자 이미지"></div>
+            <div class="correct"><img src="./img/pizza.jpeg" alt="피자 이미지"></div>
+            <span class="text" style="color: white;">파인애플피자 호 VS 파인애플피자 불호 </span>
+        </div> 
+        <div class="post5">
+            <div class="incorrect"><img src="./img/boy1.jpeg" alt="유병재 이미지"></div>
+            <div class="correct"><img src="./img/boy2.jpeg" alt="차은우 이미지"></div>
+            <span class="text" style="color: white;">100억부자 유병재 VS 무일푼 차은우 </span>
+        </div> 
     </div>
 </body>
 </html>
